@@ -2,13 +2,11 @@ import {styled} from '@/stitches.config'
 
 export const Menu = styled('aside', {
   display: 'flex',
-
+  background: 'rgba(0,0,0, 0.2)',
   minHeight: '400px',
   width: '200px',
   minWidth: '250px',
   justifyContent: 'flex-direction',
-  border: '1px solid green',
-  background: 'transparent',
 
   '& ul': {
     width: '100%',

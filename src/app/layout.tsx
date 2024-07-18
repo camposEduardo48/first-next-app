@@ -16,6 +16,7 @@ globalStyles()
 
 const Container = styled('main', {
   display: 'flex',
+  marginTop: '80px',
   gap: '1rem',
 })
 
