@@ -5,9 +5,10 @@ export const {styled, css, globalCss, keyframes, getCssText, theme, createTheme,
   createStitches({
     theme: {
       colors: {
-        primary: '#0070f3',
-        secondary: '#1a202c',
-        third: '#ffffff',
+        zapyouPrimary: '#3099CC',
+        zapyouSecondary: '#323366',
+        first: '#1a202c',
+        second: '#ffffff',
       },
       fonts: {
         sans: 'Inter, sans-serif',
@@ -23,7 +24,27 @@ export const globalStyles = globalCss({
   },
   body: {
     fontFamily: '$sans',
-    backgroundColor: '$secondary',
-    color: '$third',
+    backgroundColor: '$first',
+    color: '$second',
+  },
+  b: {
+    color: '$zapyouPrimary',
+  },
+  strong: {
+    color: '$zapyouSecondary',
+  },
+  a: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '.5rem',
+    textDecoration: 'none',
+    color: '$second',
+
+    '&:hover a': {
+      color: 'silver',
+    },
+    '&:hover svg': {
+      color: 'silver',
+    },
   },
 })

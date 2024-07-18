@@ -1,3 +1,4 @@
+'use client'
 const Playground = () => {
   return (
     <main>

@@ -16,11 +16,14 @@ globalStyles()
 
 const Container = styled('main', {
   display: 'flex',
-  backgroundColor: 'silver',
+  gap: '1rem',
 })
 
 const Main = styled('section', {
+  display: 'flex',
+  width: '100%',
   padding: '1rem',
+  border: '1px solid red',
 })
 
 export default function RootLayout({
