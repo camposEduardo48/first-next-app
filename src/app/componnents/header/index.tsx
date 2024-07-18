@@ -1,10 +1,18 @@
+import {IconUserCircle} from '@tabler/icons-react'
+import {MyHeader} from './style'
+
 const Header = () => {
   return (
-    <header>
+    <MyHeader>
       <span>
         <small>Header</small>
       </span>
-    </header>
+      <nav>
+        <div>
+          <IconUserCircle size={40} stroke={1} />
+        </div>
+      </nav>
+    </MyHeader>
   )
 }
 export default Header
