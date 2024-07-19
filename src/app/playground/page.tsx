@@ -6,6 +6,9 @@ import {Card, FooterCard, MyList, TitleList} from '../componnents/list/style'
 import {SectionContainerList} from '../componnents/sectionList'
 import {PlaygroundContainer} from './style'
 import {useState} from 'react'
+import axios from 'axios'
+
+//CORRIGIR ERROS NA FUNCIONALIDADE DO PRISMA
 
 const Playground = () => {
   const [sendItem, setSendItem] = useState('')
@@ -13,12 +16,12 @@ const Playground = () => {
     setSendItem(event.target.value)
   }
 
-  const [apiDatas, setApiDatas] = useState<[]>()
-  const requestDatas = () => {
-    setApiDatas(() => {
-      //axios GET
-      return 'will be something'
-    })
+  const [apiDatas, setApiDatas] = useState()
+  const handleRequestDatas = async ({}: TaskDatas) => {
+    const request = await axios.get('')
+    const reply = request.data
+    setApiDatas(reply)
+    return apiDatas //se n funcionar inserir o reply
   }
 
   return (
