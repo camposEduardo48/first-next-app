@@ -13,6 +13,14 @@ const Playground = () => {
     setSendItem(event.target.value)
   }
 
+  const [apiDatas, setApiDatas] = useState<[]>()
+  const requestDatas = () => {
+    setApiDatas(() => {
+      //axios GET
+      return 'will be something'
+    })
+  }
+
   return (
     <PlaygroundContainer>
       <span>
