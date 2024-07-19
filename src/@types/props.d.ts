@@ -1,0 +1,3 @@
+type ChildrenProp = {
+  children: ReactNode
+}
