@@ -35,7 +35,7 @@ const Playground = () => {
           <label htmlFor="text">Titulo</label>
           <input type="text" onChange={handleTextItem} value={sendItem} />
           <label>Descrição</label>
-          <input type="text" />
+          <textarea value={''} rows={100} placeholder={'Ex: levar cachorro para passear...'} />
           <Button onClick={() => alert('ERRO!')}>Submit</Button>
         </Form>
         <SectionContainerList>

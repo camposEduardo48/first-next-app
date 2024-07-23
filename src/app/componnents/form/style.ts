@@ -11,14 +11,14 @@ export const MyForm = styled('form', {
   minHeight: 'auto',
   width: '100%',
 
-  '& input': {
+  '& input, & textarea': {
     background: 'rgba(0,0,0, 0.2)',
     color: '#fff',
     border: '1px solid #000',
     outline: 'none',
     borderRadius: '6px',
     height: '30px',
-    minWidth: '300px',
+    width: '300px',
     padding: '.4rem',
 
     '&:focus': {
