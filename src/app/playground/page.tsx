@@ -32,8 +32,10 @@ const Playground = () => {
       <section>
         <small>Working...</small>
         <Form>
-          <label htmlFor="text">Add new item</label>
+          <label htmlFor="text">Titulo</label>
           <input type="text" onChange={handleTextItem} value={sendItem} />
+          <label>Descrição</label>
+          <input type="text" />
           <Button onClick={() => alert('ERRO!')}>Submit</Button>
         </Form>
         <SectionContainerList>

@@ -2,6 +2,7 @@ import {styled} from '@/stitches.config'
 
 export const MyForm = styled('form', {
   display: 'flex',
+  flexDirection: 'column',
   background: 'rgba(0,0,0, 0.2)',
   justifyContent: 'center',
   padding: '1rem',
